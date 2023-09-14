@@ -28,7 +28,7 @@ header::before {
 
     content: '';
 
-background-image: url('../css/imagens/fundo.jpg') ;
+background-image: url('../css/Musica.avif') ;
     
     background-size:  cover;
     background-color: rgb(0, 88, 100);
@@ -42,9 +42,9 @@ background-image: url('../css/imagens/fundo.jpg') ;
 }
 
 h1 {
-     color:rgba(20, 90, 14);
+     color:rgb(234, 236, 234);
 
-     text-shadow :4px 4px 2px  #000000;
+     text-shadow :4px 4px 2px  #18693e48;
 
      font-size: 06rem;
 
@@ -65,4 +65,110 @@ transition: all 1s;
 .botao hover {
 
 background-color: rgb(0, 217, 255);
+}
+
+
+#secao-apresentacao {
+  display: flex;
+  height: 50vh;
+  padding: 6rem;
+  gap: 2rem;
+}
+
+#secao-apresentacao img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+#secao-apresentacao div {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 60%;
+}
+
+#secao-projetos {
+  height: 100vh;
+  background-color: #4e5526;
+}
+
+.card {
+  max-width: 280px;
+  height: 380px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card:hover .card-content{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#secao-projetos ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.card-image-wrapper{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.card-content { 
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  position: absolute;
+  top: 25%;
+  left: .5rem;
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 1s, transform 1s;
+}
+
+.card h2 {
+  color: #FFF;
+  font-size: 1.5rem;
+}
+
+.card h3 {
+  color: #4628FF;
+}
+
+.card p {
+  color: #FFF;
+}
+
+#secao-orcamento{
+  height: 100vh;
+  padding: 3rem;
+}
+
+#form-orcamento{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  background-color: #e0dfe4;
+  max-width: 500px;
+  border-radius: .5rem;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.linha {
+  grid-column: 1 / 3;
 }
