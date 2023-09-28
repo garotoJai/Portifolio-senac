@@ -18,11 +18,54 @@ header{
     padding-top: 16.8rem; 
     overflow: hidden;
 
+}
 
 
 
+#menu-icon{
+  color: #FFF;
+  text-shadow: rgb(8, 7, 7) 2px 2px 2px;
+  position: fixed;
+  z-index: 10;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+}
 
+#menu {
+  position: fixed;
+  background-color: #6b71a7;
+  height: 100vh;
+  padding: 3rem;
+  z-index: 9;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 1s;
+}
 
+#menu a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+#menu.open {
+  transform: translateX(0);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+#menu li{
+  padding: 1rem;
+  border-radius: .5rem;
+  transition: background-color .5s;
+}
+
+#menu li:hover {
+  background-color: #252739;
 }
 header::before { 
 
