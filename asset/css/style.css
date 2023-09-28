@@ -33,7 +33,7 @@ header{
 
 #menu {
   position: fixed;
-  background-color: #6b71a7;
+  background-color: #6ba7a4;
   height: 100vh;
   padding: 3rem;
   z-index: 9;
@@ -43,7 +43,7 @@ header{
 }
 
 #menu a {
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.973);
   text-decoration: none;
   font-size: 1.5rem;
 }
